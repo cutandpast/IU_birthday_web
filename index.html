@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>IU_Birthday!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    </style>
+<style>
+#main{
+    bottom: 0;
+    position: fixed;
+    top: 50%; 
+    left:50%;
+    width: 40%;
+    object-fit: cover;
+    transform:translate(-50%, -30%);
+    animation: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-animation: all 0.3s;
+    -o-animation: all 0.3s;
+}
+#main:hover{
+    width:45%;
+}
+body{
+    background-color: #F3BEAC;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1.1em;
+    top: 10%;
+    left:50%;
+    position: fixed;
+    transform:translate(-50%, -30%);
+
+}
+#left_door{
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    left: -400px;
+    animation-name: lele;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+#right_door{
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right: -400px;
+    animation-name: rere;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes lele {
+    0%   {width:50%; left: 0px;}
+    100%  {width:50%; left: -400px;} 
+}
+@keyframes rere{
+    0%   {right: 0px;}
+    100%  {right: -400px;}}
+
+</style>
+
+</head>
+<body>
+    <div align = "center">
+        <h1>HAPPY BIRTHDAY</h1>
+        <a href = "gallery.html"><img id = "main" src = "IU_main.png"></a>
+        <img src = "door.png" id = "left_door">
+        <img src = "doorright.png" id = "right_door">
+    </div>    
+</body>
+</html>
